@@ -1,0 +1,21 @@
+section{
+    margin-top: 200px;
+    h1{
+        color: aquamarine;
+        font-size: 3rem;
+        margin-bottom: 150px;
+    }
+    .about-section{
+        margin: auto;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mypic{
+            width: 50%;
+        }
+        .about{
+            width: 50%;
+        }
+    }
+}
