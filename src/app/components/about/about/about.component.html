@@ -3,6 +3,7 @@
   <h1>About Me</h1>
 
   <div class="about-section">
+    <div class="mypic-bg"></div>
     <div class="mypic">
       <img src="./../../../../assets/mypic2.png" alt="mypic" />
     </div>
@@ -17,4 +18,14 @@
       </h2>
     </div>
   </div>
+
+  <h1 class="skills">SKILLS</h1>
+
+  <div class="main-skills">
+    <div class="skills-container">
+      <app-capsule class="skill" *ngFor="let skill of skills" [skillCapsule]="skill"></app-capsule>
+    </div>
+  </div>
+  
+
 </section>

@@ -9,7 +9,7 @@ section{
   }
 
   h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
   }
   h2{
@@ -19,8 +19,11 @@ section{
   
 
   .buttons{
+    height: 50px;
+    position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
     button{
       color: black;
       background-color: aquamarine;
@@ -28,10 +31,12 @@ section{
       border: none;
       padding: 10px 10px 10px;
       border-radius: 5px;
-      transition: 0.5s all ease-in-out;
+      transition: 0.2s all ease-in-out;
     }
     button:hover{
-      background-color: #cee9e0;
+      background-color: black;
+      border: 5px solid aquamarine;
+      color: aquamarine;
     }
   }
   .my-img {
