@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilties;
+
 
 *{
     margin: 0;
@@ -26,11 +24,10 @@ html{
 }
 
 body{
-    background: url('./assets/pattern.webp');
-    // backdrop-filter: blur(100px);
+    background-color: #eeeef0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
-    color: white;
+    color: black;
 }
 
 section{

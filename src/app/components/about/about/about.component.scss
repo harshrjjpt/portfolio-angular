@@ -1,7 +1,7 @@
 section{
     margin-top: 200px;
     h1{
-        color: aquamarine;
+        color: black;
         font-size: 3rem;
         margin-bottom: 150px;
     }
@@ -9,14 +9,18 @@ section{
         margin: auto;
         width: 75%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
        
         .mypic{
             margin-right: 100px;
-            background-color: wheat;
-            width: 35%;
+            background-color: gray;
+            width: 610px;
+            height: 620px;
             img{
+                width: 610px;
+            height: 620px;
+
             transform: rotate(-10deg);
             transition: 0.3s all ease-in-out;
             }
@@ -27,7 +31,20 @@ section{
         }
         .about{
             width: 50%;
-            font-size: 22px;
+            font-size: 15px;
+        }
+        .about h2 span{
+            transition: 0.5s all ease-in-out;
+
+        }
+        .about:hover h2 .span1 {
+            color: white;
+            font-size: 40px;
+        }
+        .about:hover h2 .span2 {
+            transition-delay: 0.4s;
+            color: white;
+            font-size: 35px;
         }
     }
     .skills{
@@ -42,7 +59,7 @@ section{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            width: 75%;
+            width: 60%;
             flex-wrap: wrap;
             .skill{
                 margin-right: 30px;

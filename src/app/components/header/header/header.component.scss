@@ -1,7 +1,57 @@
 section{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .social-links{
+    width: 50px;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li{
+        margin-right: 10px;
+        transition: 0.3s all ease-in-out;
+        img{
+          width: 15px;
+        height: 15px;
+        }
+      }
+      li:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+      .twitter{
+        img{
+          width: 17px;
+        height: 17px;
+        }
+      }
+    }
+  }
+
+  .nav{
+    position: absolute;
+    top: -100px;
+    left:100px;
+    ul{
+      display: flex;
+      li{
+        font-size: 17px;
+        margin-right: 20px;
+        font-weight: 500;
+        transition: 0.3s all ease-in-out;
+      }
+      li:hover{
+        cursor: pointer;
+        letter-spacing: 3px;
+      }
+    }
+  }
 
   h5{
     font-size: 1rem;
@@ -13,8 +63,13 @@ section{
     font-weight: 600;
   }
   h2{
-    color: aquamarine;
-    margin-bottom: 130px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 80px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 10px;
   }
   
 
@@ -25,18 +80,30 @@ section{
     justify-content: center;
     margin-bottom: 20px;
     button{
-      color: black;
-      background-color: aquamarine;
+      color: white;
+      background-color: black;
       margin-right: 10px;
       border: none;
       padding: 10px 10px 10px;
       border-radius: 5px;
-      transition: 0.2s all ease-in-out;
+      transition: 0.3s all ease-in-out;
+    }
+    .cv{
+      background-color: #eeeef0;
+      color: black;
+      border: 1px solid black;
     }
     button:hover{
+      background-color: #eeeef0;
+      border: 1px solid black;
+      color: black;
+      cursor: pointer;
+    }
+    .cv:hover{
       background-color: black;
-      border: 5px solid aquamarine;
-      color: aquamarine;
+      border: 1px solid black;
+      color: white;
+
     }
   }
   .my-img {
@@ -50,6 +117,8 @@ section{
     justify-content: center;
     align-items: center;
     transition: 0.3s all ease-in-out;
+  //   -webkit-filter: drop-shadow( 3px 0px 100px rgba(218, 42, 224, 0.8));
+  // filter: drop-shadow( 3px 0px 100px rgba(241, 50, 241, 0.8));
     img{
     border-radius: 50%;
     width: 25rem;
@@ -61,9 +130,13 @@ section{
   }
 }
   .my-img:hover{
-    background-color: aquamarine;
+    background-color: #eeeef0;
     width: 28.5rem;
     height: 28.5rem;
+        -webkit-filter: drop-shadow( 3px 0px 10px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow( 3px 0px 10px rgba(0, 3, 3, 0.8));
   }
 }
+
+
 
