@@ -1,71 +1,161 @@
-section{
+section {
+  margin-top: 200px;
+  h1 {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 150px;
+  }
+  .about-section {
+    -webkit-filter: drop-shadow(3px 0px 100px rgba(255, 50, 245, 0.2));
+    filter: drop-shadow(3px 0px 100px rgba(249, 76, 255, 0.2));
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mypic {
+      background-color: gray;
+      width: 610px;
+      height: 620px;
+      img {
+        width: 610px;
+        height: 620px;
+
+        transform: rotate(-10deg);
+        transition: 0.3s all ease-in-out;
+      }
+      img:hover {
+        transform: rotate(0deg);
+      }
+    }
+    .about {
+      -webkit-filter: drop-shadow(3px 0px 100px rgba(255, 50, 245, 0.2));
+      filter: drop-shadow(3px 0px 100px rgba(249, 76, 255, 0.2));
+      width: 50%;
+      font-size: 15px;
+      h2 {
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+    }
+    .about h2 span {
+      transition: 0.5s all ease-in-out;
+    }
+    .about:hover h2 .span1 {
+      color: white;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .about:hover h2 .span2 {
+      transition-delay: 0.4s;
+      color: white;
+      font-size: 35px;
+      font-weight: 500;
+    }
+  }
+  .skills {
     margin-top: 200px;
-    h1{
-        color: black;
-        font-size: 3rem;
-        margin-bottom: 150px;
+  }
+
+  .main-skills {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    .skills-container {
+      padding: 10px 10px 10px 10px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 60%;
+      flex-wrap: wrap;
+      .skill {
+        margin-right: 30px;
+        margin-bottom: 30px;
+      }
     }
-    .about-section{
-        margin: auto;
-        width: 75%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-       
-        .mypic{
-            margin-right: 100px;
-            background-color: gray;
-            width: 610px;
-            height: 620px;
-            img{
-                width: 610px;
-            height: 620px;
+  }
+}
 
-            transform: rotate(-10deg);
-            transition: 0.3s all ease-in-out;
-            }
-            img:hover{
-            transform: rotate(0deg);
-
-            }
-        }
-        .about{
-            width: 50%;
-            font-size: 15px;
-        }
-        .about h2 span{
-            transition: 0.5s all ease-in-out;
-
-        }
-        .about:hover h2 .span1 {
-            color: white;
-            font-size: 40px;
-        }
-        .about:hover h2 .span2 {
-            transition-delay: 0.4s;
-            color: white;
-            font-size: 35px;
-        }
+@media screen and (max-width: 830px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    .mypic {
+      width: 360px !important;
+      height: 400px !important;
+      img {
+        width: 360px !important;
+        height: 400px !important;
+      }
     }
-    .skills{
-        margin-top: 200px;
+    .about {
+      margin-top: 50px;
+      width: 400px !important;
+      h2 {
+        width: 400px;
+      }
     }
+  }
 
-    .main-skills{
-        margin-top: 8rem;
+  @media screen and (max-width: 700px) {
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      .mypic {
+        width: 360px !important;
+        height: 400px !important;
+        img {
+          width: 360px !important;
+          height: 400px !important;
+        }
+      }
+      .about {
+        margin-top: 50px;
+        width: 400px !important;
         display: flex;
         justify-content: center;
-        .skills-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 60%;
-            flex-wrap: wrap;
-            .skill{
-                margin-right: 30px;
-                margin-bottom: 30px;
-            }
+        h2 {
+          width: 400px;
         }
+      }
     }
-   
+  }
+}
+@media screen and (max-width: 500px) {
+  section {
+    margin-top: 100px;
+    h1 {
+      margin-bottom: 50px !important;
+    }
+    .about-section {
+      .mypic {
+        display: flex;
+        justify-content: center;
+        width: 200px !important;
+        height: 190px !important;
+        margin-right: 0px !important;
+        img {
+          width: 200px !important;
+          height: 190px !important;
+        }
+      }
+      .about {
+        margin-top: 50px;
+        width: 400px !important;
+        h2 {
+          text-align: center;
+          width: 350px;
+          font-size: 15px;
+        }
+      }
+    }
+    .skills {
+      margin-top: 50px !important;
+    }
+    .main-skills {
+      margin-top: 80px;
+    }
+  }
 }

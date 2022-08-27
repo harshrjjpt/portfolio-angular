@@ -3,6 +3,9 @@
 
     .skill-meter-value{
         margin-bottom: -40px;
+        h2{
+            width: 100px;
+        }
         // background-color: aquamarine;
         // color: black;
         // width: 3rem;
@@ -25,8 +28,44 @@
         height: 0.3rem;
         .skill-fill{
             border-radius: 30px;
-            background-color: black;
+            background-color: #e64d33;
             height: 0.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .skill{
+        .skill-meter-value{
+            h2{
+                width: 40px;
+            font-size: 13px;
+            margin-bottom: 6px;
+            }
+        }
+        .text{
+            h1{
+                font-size: 17px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skill{
+        .skill-meter-value{
+            h2{
+                width: 40px;
+            font-size: 10px;
+            margin-bottom: 15px;
+            }
+        }
+        .text{
+            h1{
+                font-size: 12px;
+            }
+
         }
     }
 }

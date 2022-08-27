@@ -6,11 +6,11 @@ export default class Constants {
       { skillName: 'Angular', skillValue: 80 },
       { skillName: 'HTML', skillValue: 90 },
       { skillName: 'CSS', skillValue: 90 },
-      { skillName: 'Python', skillValue: 70 },
       { skillName: 'Bootstrap', skillValue: 90 },
       { skillName: 'Tailwind CSS', skillValue: 90 },
       { skillName: 'Javascript', skillValue: 85 },
       { skillName: 'Typescript', skillValue: 80 },
+      { skillName: 'Figma', skillValue: 80 },
     ],
   };
 }

@@ -1,142 +1,222 @@
-section{
+section {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  .social-links{
+  .social-links {
+    
     width: 50px;
     position: absolute;
     top: -100px;
-    right: 100px;
-    ul{
+    right: 150px;
+    ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      li{
-        margin-right: 10px;
+      li {
+        margin-right: 20px;
         transition: 0.3s all ease-in-out;
-        img{
+        img {
           width: 15px;
-        height: 15px;
+          height: 15px;
+          
         }
       }
-      li:hover{
+      li:hover {
         cursor: pointer;
         transform: scale(1.2);
       }
-      .twitter{
-        img{
+      .twitter {
+        img {
           width: 17px;
-        height: 17px;
+          height: 17px;
         }
       }
     }
   }
 
-  .nav{
+  .nav {
     position: absolute;
     top: -100px;
-    left:100px;
-    ul{
+    left: 100px;
+    ul {
       display: flex;
-      li{
+      li {
         font-size: 17px;
         margin-right: 20px;
         font-weight: 500;
         transition: 0.3s all ease-in-out;
       }
-      li:hover{
+      li:hover {
         cursor: pointer;
         letter-spacing: 3px;
       }
     }
   }
 
-  h5{
+  .hamburger-icon{
+    display: none;
+    position: absolute;
+    top: -105px;
+    left: 100px;
+    img{
+      width: 32px;
+    height: 32px;
+    }
+  }
+  
+
+  h5 {
     font-size: 1rem;
     font-weight: 500;
   }
 
-  h1{
+  h1 {
     font-size: 4rem;
     font-weight: 600;
   }
-  h2{
+  h2 {
     text-align: center;
     font-size: 14px;
-    color: black;
+    color: #e64d33;
     margin-bottom: 80px;
-    font-weight: 500;
     letter-spacing: 3px;
     word-spacing: 10px;
   }
-  
 
-  .buttons{
+  .buttons {
     height: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    button{
+    button {
+      width: 120px;
+      height: 50px;
       color: white;
-      background-color: black;
+      background-color: #e64d33;
       margin-right: 10px;
       border: none;
       padding: 10px 10px 10px;
       border-radius: 5px;
       transition: 0.3s all ease-in-out;
     }
-    .cv{
+    .cv {
       background-color: #eeeef0;
       color: black;
       border: 1px solid black;
     }
-    button:hover{
+    button:hover {
       background-color: #eeeef0;
       border: 1px solid black;
       color: black;
       cursor: pointer;
     }
-    .cv:hover{
+    .cv:hover {
       background-color: black;
       border: 1px solid black;
       color: white;
-
     }
   }
   .my-img {
     margin: auto;
     width: 28rem;
     height: 28rem;
-    background-color: wheat;
+    background-color: white;
     border-radius: 50%;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s all ease-in-out;
-  //   -webkit-filter: drop-shadow( 3px 0px 100px rgba(218, 42, 224, 0.8));
-  // filter: drop-shadow( 3px 0px 100px rgba(241, 50, 241, 0.8));
-    img{
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
-    transition: 0.3s all ease-in-out;
+    //   -webkit-filter: drop-shadow( 3px 0px 100px rgba(218, 42, 224, 0.8));
+    // filter: drop-shadow( 3px 0px 100px rgba(241, 50, 241, 0.8));
+    img {
+      border-radius: 50%;
+      width: 25rem;
+      height: 25rem;
+      transition: 0.3s all ease-in-out;
+      filter: grayscale(100%);
+    }
+    img:hover {
+      transform: rotate(5deg);
+    }
   }
-  img:hover{
-    transform: rotate(5deg);
-  }
-}
-  .my-img:hover{
+  .my-img:hover {
     background-color: #eeeef0;
     width: 28.5rem;
     height: 28.5rem;
-        -webkit-filter: drop-shadow( 3px 0px 10px rgba(0, 0, 0, 0.8));
-    filter: drop-shadow( 3px 0px 10px rgba(0, 3, 3, 0.8));
+    -webkit-filter: drop-shadow(3px 0px 10px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(3px 0px 10px rgba(0, 3, 3, 0.8));
   }
 }
 
 
+@media screen and (max-width: 700px) {
+  section{
+    .nav{
+      display: none;
+    }
+    .social-links{
+      right: 70px;
+    }
+    .hamburger-icon{
+      left: 70px;
+      display: block;
+    }
+    .buttons{
+      button{
+        width: 110px;
+        height: 35px;
+      }
+    }
+    .my-img{
+      width: 280px;
+        height: 280px;
+      img{
+        width: 250px;
+        height: 250px;
+      }
+     
+    }
+  }
 
+}
+
+
+@media screen and (max-width: 500px) {
+  section{
+    margin-top: 70px;
+    .social-links{
+      right: 50px;
+      top: -50px;
+
+    }
+    .hamburger-icon{
+      left: 40px;
+      top: -50px;
+      display: block;
+      img{
+        width: 26px;
+        height: 26px;
+      }
+    }
+    .buttons{
+      button{
+        width: 110px;
+        height: 35px;
+      }
+    }
+    .my-img{
+      width: 280px;
+        height: 280px;
+      img{
+        width: 250px;
+        height: 250px;
+      }
+     
+    }
+  }
+
+}
