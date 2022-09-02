@@ -1,5 +1,9 @@
 .main{
-    margin-top: 50px;
+    margin-top: 20rem;
+    @media screen and (max-width: 600px) {
+       margin-top: 8rem;
+    }
+    
     h5{
         color: #e64d33;
     }
@@ -31,7 +35,7 @@
                 
                 h5{
                     position: absolute;
-                    color: rgb(196, 188, 188);
+                    color: white;
                     font-size: 13px;
                     bottom: 4px;
                 }
