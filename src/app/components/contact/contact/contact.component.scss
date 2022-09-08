@@ -61,18 +61,18 @@
         justify-content: center;
         row-gap: 30px;
         input {
-          background-color: #eeeef0;
-          border: 2px solid #e64d33;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 3px solid #e64d33;
           width: 600px;
-          height: 40px;
-          border-radius: 8px;
+          height: 70px;
+          border-radius: 15px;
         }
         textarea {
-          background-color: #eeeef0;
-          border: 2px solid #e64d33;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 3px solid #e64d33;
           width: 600px;
           height: 300px;
-          border-radius: 8px;
+          border-radius: 20px;
         }
         input::placeholder {
           color: #e64d33;

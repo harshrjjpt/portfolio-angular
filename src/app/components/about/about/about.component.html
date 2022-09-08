@@ -59,6 +59,7 @@
     <a class="emoji" *ngIf="this.filler.fillerWidth>80 && showSkillBar" href="https://www.freeiconspng.com/img/45541" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-png-free-vector-download-0.png" width="350" alt="Emoticons Whatsapp Png Free Vector Download" /></a>
     <div *ngIf="showSkillBar" class="skill-meter"> <span class="filler" style="width: {{this.filler.fillerWidth}}%" class="skill-fill"></span></div>
     <!-- <h1 *ngIf="showSkillBar">{{skillFill}}</h1> -->
+    <span *ngIf="!showSkillBar">&#128072; tap or hover on any skill</span>
     <div class="skills-container">
       <app-capsule (mouseenter)="showSkillBar = true" (mouseleave)="showSkillBar = false" (parentComponent)="parentComponent($event)" class="skill" *ngFor="let skill of skills" [skillCapsule]="skill"></app-capsule>
     </div>

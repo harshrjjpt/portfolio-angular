@@ -9,6 +9,8 @@ import { ExperienceComponent } from './components/experience/experience/experien
 import { PortfolioComponent } from './components/portfolio/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { CapsuleComponent } from './components/capsule/capsule.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CapsuleComponent } from './components/capsule/capsule.component';
     ExperienceComponent,
     PortfolioComponent,
     ContactComponent,
-    CapsuleComponent
+    CapsuleComponent,
+    FooterComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

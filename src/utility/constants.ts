@@ -30,7 +30,6 @@ export default class Constants {
         Image:
           'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
       },
-      { skillName: 'Bootstrap', skillValue: 90, Image: '' },
       {
         skillName: 'Tailwind CSS',
         skillValue: 90,
