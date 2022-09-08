@@ -1,23 +1,16 @@
 section {
   margin-top: 200px;
-
   h1 {
     color: black;
     font-size: 3rem;
     margin-bottom: 150px;
   }
-
   .about-section {
-    -webkit-filter: drop-shadow(3px 0px 100px rgba(255, 50, 245, 0.2));
-    filter: drop-shadow(3px 0px 100px rgba(249, 76, 255, 0.2));
     margin: auto;
     width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-
     .mypic {
       background-color: gray;
       width: 610px;
@@ -26,38 +19,31 @@ section {
       img {
         width: 610px;
         height: 620px;
-
         transform: rotate(-10deg);
         transition: 0.3s all ease-in-out;
       }
-
       img:hover {
         transform: rotate(0deg);
       }
     }
-
     .about {
       -webkit-filter: drop-shadow(3px 0px 100px rgba(255, 50, 245, 0.2));
       filter: drop-shadow(3px 0px 100px rgba(249, 76, 255, 0.2));
       width: 50%;
       font-size: 15px;
-
       h2 {
         font-weight: 300;
         letter-spacing: 2px;
       }
     }
-
     .about h2 span {
       transition: 0.5s all ease-in-out;
     }
-
     .about:hover h2 .span1 {
       color: white;
       font-size: 40px;
       font-weight: 500;
     }
-
     .about:hover h2 .span2 {
       transition-delay: 0.4s;
       color: white;
@@ -65,12 +51,10 @@ section {
       font-weight: 500;
     }
   }
-
   .skills {
     margin-top: 200px;
     margin-bottom: 200px;
   }
-
   .main-skills {
     position: relative;
     margin-top: 20rem;
@@ -78,8 +62,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
     h1 {
       position: absolute;
       top: -140px;
@@ -89,7 +71,6 @@ section {
         font-size: 30px;
       }
     }
-
     .skill-meter {
       position: absolute;
       top: -50px;
@@ -98,19 +79,14 @@ section {
       width: 500px;
       height: 10px;
       background-color: black;
-      -webkit-filter: drop-shadow(3px 0px 100px rgba(50, 221, 7, 0.938));
-      filter: drop-shadow(3px 0px 100px rgba(50, 221, 7, 0.938));
-
       @media screen and (max-width: 600px) {
         width: 300px;
         height: 7px;
         top: -10px;
       }
-
       @media screen and (max-width: 500px) {
         top: 120px;
       }
-
       .skill-fill {
         position: absolute;
         border-radius: 10px;
@@ -123,13 +99,8 @@ section {
           height: 7px;
         }
       }
-
-
     }
-
-
     .skills-container {
-
       column-gap: 80px;
       row-gap: 30px;
       cursor: pointer;
@@ -158,48 +129,38 @@ section {
     }
   }
 }
-
 @media screen and (max-width: 830px) {
   .about-section {
     display: flex;
     flex-direction: column;
-
     .mypic {
       width: 360px !important;
       height: 400px !important;
-
       img {
         width: 360px !important;
         height: 400px !important;
       }
     }
-
     .about {
       margin-top: 50px;
       width: 400px !important;
-
       h2 {
         width: 400px;
       }
     }
   }
-
   @media screen and (max-width: 700px) {
     .about-section {
-
       display: flex;
       flex-direction: column;
-
       .mypic {
         width: 360px !important;
         height: 400px !important;
-
         img {
           width: 360px !important;
           height: 400px !important;
         }
       }
-
       .about {
         margin-top: 50px;
         width: 400px !important;
@@ -213,7 +174,6 @@ section {
     }
   }
 }
-
 @media screen and (max-width: 500px) {
   section {
     margin-top: 100px;
@@ -221,7 +181,6 @@ section {
     h1 {
       margin-bottom: 50px !important;
     }
-
     .about-section {
       .mypic {
         display: flex;
@@ -229,17 +188,14 @@ section {
         width: 200px !important;
         height: 190px !important;
         margin-right: 0px !important;
-
         img {
           width: 200px !important;
           height: 190px !important;
         }
       }
-
       .about {
         margin-top: 50px;
         width: 400px !important;
-
         h2 {
           text-align: center;
           width: 350px;
@@ -247,17 +203,14 @@ section {
         }
       }
     }
-
     .skills {
       margin-top: 50px !important;
     }
-
     .main-skills {
       margin-top: 80px;
     }
   }
 }
-
 .emoji {
   position: absolute;
   top: -170px;
@@ -267,35 +220,28 @@ section {
   perspective: 1000px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.637));
-
   @media screen and (max-width: 500px) {
     top: -30px;
   }
-
   img {
     width: 110px;
     height: 110px;
   }
 }
-
 @keyframes shake {
-
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%,
   80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%,
   50%,
   70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
