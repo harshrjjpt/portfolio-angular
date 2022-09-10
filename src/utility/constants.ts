@@ -9,13 +9,18 @@ export default class Constants {
       },
       {
         skillName: 'React Js',
-        skillValue: 70,
+        skillValue: 80,
         Image:
           'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
       },
       {
-        skillName: 'Angular',
+        skillName: 'Django',
         skillValue: 80,
+        Image: 'https://cdn.worldvectorlogo.com/logos/django.svg',
+      },
+      {
+        skillName: 'Angular',
+        skillValue: 90,
         Image: 'https://angular.io/assets/images/logos/angular/angular.svg',
       },
       {
@@ -47,6 +52,23 @@ export default class Constants {
         skillValue: 70,
         Image:
           'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+      },
+      {
+        skillName: 'Bootstrap',
+        skillValue: 95,
+        Image:
+          'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+      },
+      // {
+      //   skillName: 'Git',
+      //   skillValue: 80,
+      //   Image: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+      // },
+      {
+        skillName: 'MySQL',
+        skillValue: 70,
+        Image:
+          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       },
       {
         skillName: 'Figma',
