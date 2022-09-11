@@ -1,10 +1,14 @@
+.dark{
+  background-color: black;
+  color: white;
+}
 .main {
-  margin-top: 10rem;
   @media screen and (max-width: 600px) {
-    margin-top: 8rem;
+    // margin-top: 8rem;
   }
 
   h5 {
+    margin-top: 100px;
     color: #b44ab0;
   }
   display: flex;
@@ -35,7 +39,8 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+          -webkit-filter: drop-shadow(5px 5px 500px rgba(133, 0, 241, 0.76));
+        filter: drop-shadow(5px 5px 500px rgba(133, 0, 241, 0.767));
         h5 {
           position: absolute;
           color: white;
@@ -77,6 +82,8 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          -webkit-filter: drop-shadow(5px 5px 500px rgba(133, 0, 241, 0.685));
+        filter: drop-shadow(5px 5px 500px rgba(133, 0, 241, 0.623));
         .input-wrapper {
           position: relative;
         }

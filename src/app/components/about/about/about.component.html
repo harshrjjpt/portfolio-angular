@@ -1,67 +1,77 @@
-<section>
+<section [ngClass]="{'dark': filler.gettheme() === 'dark'}">
   <h5>Get To Know</h5>
-  <h1>About Me</h1>
-
+  <h1 style="color: #b44ab0;">About Me</h1>
   <div class="about-section">
     <div class="mypic">
       <img src="./assets/mypic2.png" alt="mypic" />
     </div>
     <div class="about">
       <h2>
-        I am an <span class="span1"> ardent coder </span> looking for
-        challenging opportunities in IT Industry to explore various technologies
-        and mark a <span class="span2">significant contribution</span> in the
-        field. In addition to these, I have experience in some of the latest
-        technologies and tools like Git, web scrapping, etc. Some of the
-        programming languages and frameworks that I have hands-on are React Js,
-        Redux, Angular, Bootstrap, etc.
+        Greetings, I'm Harsh. I work at Dapplooker as a front-end developer. I'm
+        a driven individual who is eager to learn new technologies in order to
+        advance daily. In order to learn more about various technologies and
+        make a major contribution to the industry, I'm seeking for challenging
+        possibilities in the IT sector. React Js, Redux, Angular, Bootstrap, and
+        other programming languages and frameworks are a few things I have
+        experience with.
       </h2>
     </div>
   </div>
 
   <h1 class="skills">SKILLS</h1>
-  <!-- <div class="skills-box">
-  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img
-      src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" />
-  </a><a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-      alt="react" /> </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-      alt="html5" /> </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-      alt="css3" /> </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
-      src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" /> </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" />
-  </a>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" /> </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-      alt="javascript" /> </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-      alt="mysql" /> </a>
-  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img
-      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" /> </a> <a
-    href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-      alt="typescript" /> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img
-      src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" /> </a>
-
-    </div> -->
+  
   <div class="main-skills">
-    <a class="emoji" *ngIf="this.filler.fillerWidth>50 && showSkillBar" href="https://www.freeiconspng.com/img/45553" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-photo-png-hd-12.png" alt="Emoticons Whatsapp Photo PNG HD" /></a>
-    <a class="emoji" *ngIf="this.filler.fillerWidth>0 && this.filler.fillerWidth<40 && showSkillBar " href="https://www.freeiconspng.com/img/45551" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/high-resolution-emoticons-whatsapp-png-clipart-10.png"  alt="High Resolution Emoticons Whatsapp Png Clipart" /></a>
-    <a class="emoji" *ngIf="this.filler.fillerWidth>80 && showSkillBar" href="https://www.freeiconspng.com/img/45541" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-png-free-vector-download-0.png" alt="Emoticons Whatsapp Png Free Vector Download" /></a>
-    <div *ngIf="showSkillBar" class="skill-meter"> <span class="filler" style="width: {{this.filler.fillerWidth}}%" class="skill-fill"></span></div>
+    <a
+      class="emoji"
+      *ngIf="this.filler.fillerWidth > 50 && showSkillBar"
+      href="https://www.freeiconspng.com/img/45553"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-photo-png-hd-12.png"
+        alt="Emoticons Whatsapp Photo PNG HD"
+    /></a>
+    <a
+      class="emoji"
+      *ngIf="
+        this.filler.fillerWidth > 0 &&
+        this.filler.fillerWidth < 40 &&
+        showSkillBar
+      "
+      href="https://www.freeiconspng.com/img/45551"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/high-resolution-emoticons-whatsapp-png-clipart-10.png"
+        alt="High Resolution Emoticons Whatsapp Png Clipart"
+    /></a>
+    <a
+      class="emoji"
+      *ngIf="this.filler.fillerWidth > 80 && showSkillBar"
+      href="https://www.freeiconspng.com/img/45541"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-png-free-vector-download-0.png"
+        alt="Emoticons Whatsapp Png Free Vector Download"
+    /></a>
+    <div [ngClass]="{'skill-meter-white': filler.gettheme() === 'dark'}" *ngIf="showSkillBar" class="skill-meter">
+      <span
+        class="filler"
+        style="width: {{ this.filler.fillerWidth }}%"
+        class="skill-fill"
+      ></span>
+    </div>
     <!-- <h1 *ngIf="showSkillBar">{{skillFill}}</h1> -->
-    <span class="skill-tap" *ngIf="!showSkillBar">&#128072; tap or hover on any skill</span>
+    <span class="skill-tap" *ngIf="!showSkillBar"
+      >&#128072; tap or hover on any skill</span
+    >
     <div class="skills-container">
-      <app-capsule (mouseenter)="showSkillBar = true" (mouseleave)="showSkillBar = false" (parentComponent)="parentComponent($event)" class="skill" *ngFor="let skill of skills" [skillCapsule]="skill"></app-capsule>
+      <app-capsule
+        (mouseenter)="showSkillBar = true"
+        (mouseleave)="showSkillBar = false"
+        (parentComponent)="parentComponent($event)"
+        class="skill"
+        *ngFor="let skill of skills"
+        [skillCapsule]="skill"
+      ></app-capsule>
     </div>
   </div>
 </section>

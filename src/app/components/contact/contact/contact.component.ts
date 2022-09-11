@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { FillerService } from 'src/app/filler.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  constructor(public filler: FillerService) {}
   isFormInvalid = false;
 
   msgForm = new FormGroup({

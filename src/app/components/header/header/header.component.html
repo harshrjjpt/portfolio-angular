@@ -1,4 +1,4 @@
-<section>
+<section  [ngClass]="{'dark': filler.gettheme() === 'dark'}">
   <div class="social-links">
     <ul>
       <a target="_blank" href="https://twitter.com/harshrjjpt">
@@ -14,6 +14,7 @@
       ></a>
     </ul>
   </div>
+  <button (click)="themeHandler()" class="theme-btn">change theme</button>
   <div class="nav">
     <ul>
       <li>ABOUT</li>

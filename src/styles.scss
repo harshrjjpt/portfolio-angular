@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import './utility/utility.scss';
 
 *{
     margin: 0;
@@ -24,14 +24,13 @@ html{
 }
 
 body{
-    background-color: #eeeef0;
+    background-color: $backgroundColor;
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
     color: black;
 }
 
 section{
-    margin-top: 8rem;
 }
 
 section>h2, section>h1, section>h5 {
@@ -52,7 +51,8 @@ section>h2, section>h1, section>h5 {
     height: auto;
     background-color: #e64d33;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    -webkit-filter: drop-shadow(5px 5px 1000px rgba(133, 0, 241, 0.788));
+        filter: drop-shadow(5px 5px 1000px rgba(133, 0, 241, 0.781));
     @media screen and (max-width: 600px) {
       column-gap: 15px;
       width: 90%;
