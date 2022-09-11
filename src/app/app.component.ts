@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     if (!localStorage.getItem('mytheme')) {
-      localStorage.setItem('mytheme', 'light');
+      localStorage.setItem('mytheme', 'dark');
     }
   }
 }
