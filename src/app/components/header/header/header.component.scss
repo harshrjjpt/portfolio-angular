@@ -1,3 +1,4 @@
+@import './../../../../utility/utility.scss';
 .dark {
   background-color: black;
   color: white;
@@ -162,8 +163,8 @@ section {
     justify-content: center;
     align-items: center;
     transition: 0.3s all ease-in-out;
-    -webkit-filter: drop-shadow(3px 0px 1000px rgba(255, 50, 245, 0.911));
-      filter: drop-shadow(3px 0px 1000px rgba(249, 76, 255, 0.849));
+    -webkit-filter: $pinkWebkit;
+      filter: $pinkFilter;
     img {
       border-radius: 50%;
       width: 25rem;

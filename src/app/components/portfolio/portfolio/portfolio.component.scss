@@ -12,8 +12,8 @@
     margin-top: 100px;
   }
   .projects-container {
-    -webkit-filter: drop-shadow(5px 5px 1000px rgba(133, 0, 241, 0.719));
-        filter: drop-shadow(5px 5px 1000px rgba(133, 0, 241, 0.678));
+    -webkit-filter: $pinkWebkit;
+      filter: $pinkFilter;
     margin-top: 400px;
     display: flex;
     justify-content: center;
